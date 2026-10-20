@@ -22,7 +22,6 @@ import (
 	"net/http/httptest"
 	"net/url"
 	"strconv"
-	"sync"
 	"testing"
 
 	"github.com/google/go-github/v82/github"
