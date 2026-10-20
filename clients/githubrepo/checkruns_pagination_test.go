@@ -145,7 +145,7 @@ func TestListCheckRunsForRefPaginatesAndCaches(t *testing.T) {
 		w.Header().Set("Content-Type", "application/json")
 		if err := json.NewEncoder(w).Encode(map[string]any{
 			"total_count": totalRuns,
-			"check_runs": runs,
+			"check_runs":  runs,
 		}); err != nil {
 			t.Errorf("encode response: %v", err)
 		}

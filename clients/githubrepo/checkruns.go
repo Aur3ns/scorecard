@@ -49,9 +49,9 @@ type checkRunsGraphqlData struct {
 													Conclusion githubv4.CheckConclusionState
 													Status     githubv4.CheckStatusState
 												}
-											PageInfo struct {
-												HasNextPage githubv4.Boolean
-											}
+												PageInfo struct {
+													HasNextPage githubv4.Boolean
+												}
 											} `graphql:"checkSuites(first: $checksToAnalyze)"`
 										}
 									}
